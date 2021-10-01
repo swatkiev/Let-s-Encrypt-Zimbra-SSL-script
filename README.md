@@ -1,6 +1,6 @@
 New version of Let's Encrypt certificate for Zimbra Mail Server on Ubuntu/Debian.
 
-For tsart use command:
+For start use command:
 
 - chmod +x configure-ssl-zimbra.sh & chmod +x renew-ssl-zimbra.sh - for change mode of script files
 
