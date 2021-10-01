@@ -23,3 +23,5 @@ Also you can read:
 - https://habr.com/ru/post/580092/
 
 - https://askubuntu.com/questions/1102803/how-to-upgrade-openssl-1-1-0-to-1-1-1-in-ubuntu-18-04?answertab=votes#tab-top
+
+- https://snapcraft.io/docs/installing-snapd
