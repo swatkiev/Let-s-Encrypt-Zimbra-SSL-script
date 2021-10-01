@@ -4,7 +4,13 @@ New version of Let's Encrypt certificate for Zimbra Mail Server on Ubuntu/Debian
 
 - renew-ssl-zimbra.sh - for renew certificate every 3 month (you can add it to crontab with your $DOMAIN and $MAIL)
 
-For RHEL/CentOS you must change "apt-get" to "yum"
+For RHEL/CentOS you must change "apt-get" to "yum" and make this changes before run script:
+
+- yum install epel-release -y
+- yum install snapd -y
+- systemctl enable --now snapd.socket
+- ln -s /var/lib/snapd/snap /snap
+- reboot
 
 Also you can read:
 
