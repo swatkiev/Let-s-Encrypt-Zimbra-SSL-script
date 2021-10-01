@@ -1,8 +1,12 @@
-New version of Let's Encrypt certificate for Zimbra Mail Server on Ubuntu/Debian:
+New version of Let's Encrypt certificate for Zimbra Mail Server on Ubuntu/Debian.
 
-- configure-ssl-zimbra.sh - for first run&install certificate on Zimbra host
+For tsart use command:
 
-- renew-ssl-zimbra.sh - for renew certificate every 3 month (you can add it to crontab, but first you must set your $DOMAIN and $MAIL)
+- chmod +x configure-ssl-zimbra.sh & chmod +x renew-ssl-zimbra.sh - for change mode of script files
+
+- ./configure-ssl-zimbra.sh - for first run&install certificate on Zimbra host
+
+- ./renew-ssl-zimbra.sh - for renew certificate every 3 month (you can add it to crontab, but first you must set your $DOMAIN and $MAIL)
 
 For RHEL/CentOS you must change "apt-get" to "yum" and do this commands in console before run script:
 
