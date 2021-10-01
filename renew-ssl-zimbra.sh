@@ -18,6 +18,10 @@ su - zimbra -c 'zmproxyctl stop'
 su - zimbra -c 'zmmailboxdctl stop'
 
 # Renew SSL
+cd /etc/letsencrypt/
+rm -rf archive/$DOMAIN
+rm -rf live/$DOMAIN
+rm -rf renewal/$DOMAIN.conf
 
 certbot certonly --standalone --non-interactive --agree-tos --preferred-chain "ISRG Root X1" --email $MAIL -d $DOMAIN --hsts
 cd /etc/letsencrypt/live/$DOMAIN
