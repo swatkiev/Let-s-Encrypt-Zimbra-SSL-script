@@ -7,6 +7,7 @@ renew-ssl-zimbra.sh - for renew certificate every 3 month (you can add it to cro
 For RHEL/CentOS you must change "apt-get" to "yum"
 
 Also you can read:
+
 https://certbot.eff.org/instructions and set type of your web server and type of your OS
 
 https://www.identrust.com/support/downloads
