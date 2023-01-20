@@ -75,3 +75,4 @@ su - zimbra -c 'cd /opt/zimbra/ssl/letsencrypt/ && /opt/zimbra/bin/zmcertmgr dep
 # Restart Zimbra
 su - zimbra -c 'zmproxyctl start'
 su - zimbra -c 'zmmailboxdctl start'
+su - zimbra -c 'zmcontrol restart'
