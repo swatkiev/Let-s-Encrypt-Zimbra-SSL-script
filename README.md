@@ -53,3 +53,11 @@ Use this commands for fix it:
 - zmlocalconfig -e ldap_starttls_required=false
 - zmlocalconfig -e ldap_starttls_supported=0
 - zmcontrol restart
+
+Links:
+
+- https://forums.zimbra.org/viewtopic.php?t=69645
+
+- https://forums.zimbra.org/viewtopic.php?t=65875
+
+- https://community.letsencrypt.org/t/zimbra-certbot-letsencrypt-certificate-and-private-key-do-not-match/188530
