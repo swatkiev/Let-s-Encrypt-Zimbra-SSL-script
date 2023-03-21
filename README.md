@@ -38,10 +38,10 @@ ERROR: Certificate 'cert.pem' and private key 'privkey.pem' do not match.
 
 Use this script zmcertmgrfix.sh for fix it:
 
-chmod +x zmcertmgrfix.sh
-./zmcertmgrfix.sh
-su zimbra
-zmcontrol restart
+- chmod +x zmcertmgrfix.sh
+- ./zmcertmgrfix.sh
+- su zimbra
+- zmcontrol restart
 
 If you have error something like this when you restart your zimbra server:
 
@@ -49,7 +49,7 @@ Unable to start TLS: SSL connect attempt failed error:14077410:SSL routines:SSL2
 
 Use this commands for fix it:
 
-su zimbra
-zmlocalconfig -e ldap_starttls_required=false
-zmlocalconfig -e ldap_starttls_supported=0
-zmcontrol restart
+- su zimbra
+- zmlocalconfig -e ldap_starttls_required=false
+- zmlocalconfig -e ldap_starttls_supported=0
+- zmcontrol restart
