@@ -30,3 +30,26 @@ Also you can read:
 
 - https://snapcraft.io/docs/installing-snapd
 
+If you have error something like this when you renew your SSL certificate:
+
+** Verifying 'cert.pem' against 'privkey.pem'
+140042176247472:error:0607907F:digital envelope routines:EVP_PKEY_get1_RSA:expecting an rsa key:p_lib.c:287:
+ERROR: Certificate 'cert.pem' and private key 'privkey.pem' do not match.
+
+Use this script zmcertmgrfix.sh for fix it:
+
+chmod +x zmcertmgrfix.sh
+./zmcertmgrfix.sh
+su zimbra
+zmcontrol restart
+
+If you have error something like this when you restart your zimbra server:
+
+Unable to start TLS: SSL connect attempt failed error:14077410:SSL routines:SSL23_GET_SERVER_HELLO:sslv3 alert handshake failure when connecting to ldap master.
+
+Use this commands for fix it:
+
+su zimbra
+zmlocalconfig -e ldap_starttls_required=false
+zmlocalconfig -e ldap_starttls_supported=0
+zmcontrol restart
